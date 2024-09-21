@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insert here the page title</title>
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self'; 
+  script-src 'self'; 
+  style-src 'self' 'unsafe-inline'; 
+  img-src 'self' data:; 
+  font-src 'self'; 
+  connect-src 'self';
+  child-src 'self';
+  form-action 'self';
+  object-src 'none';
+  ">
+  <!-- Meta Description -->
+  <meta name="description" content="Insert here the summary of the pages's content" />
+  <!-- Open Graph Description for Social Media -->
+  <meta property="og:description" content="Insert here the summary of the pages's content for social media" />
+  <!-- Open Graph Title for Social Media -->
+  <meta property="og:title" content="Insert here the page title" />
+  <!-- Open Graph Image for Social Media -->
+  <meta property="og:image" content="/vite.svg" />
+  <!-- Open Graph URL for Social Media -->
+  <meta property="og:url" content="Insert here the page URL" />
+  <!-- Open Graph Type for Social Media -->
+  <meta property="og:type" content="website" />
+</head>
+
+<body data-bs-theme="dark">
+  <noscript>You need to enable JavaScript in the Site Settings to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

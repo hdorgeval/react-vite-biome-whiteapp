@@ -1,0 +1,35 @@
+{
+  "name": "react-vite-biome-whiteapp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite",
+    "build": "rimraf dist && npm run lint && tsc -b && vite build",
+    "tsc": "tsc -b",
+    "lint": "biome lint .",
+    "lint-fix": "biome lint . --write",
+    "preview": "vite preview",
+    "check-filenames-convention": "tsc ./check-filenames-convention.ts && tsx ./check-filenames-convention.ts"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.3",
+    "bootstrap-icons": "1.11.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/bootstrap": "5.2.10",
+    "@types/node": "22.5.4",
+    "@types/react": "18.3.5",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "globals": "15.9.0",
+    "rimraf": "6.0.1",
+    "tsx": "4.19.1",
+    "typescript": "5.6.2",
+    "vite": "5.4.3"
+  }
+}
